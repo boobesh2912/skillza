@@ -1,0 +1,29 @@
+/* --- Global Styles from your reference --- */
+:root {
+  --primary: #6366f1;
+  --primary-light: #a5b4fc;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --border: #475569;
+  --success: #22c55e;
+  --error: #ef4444;
+  --gradient-primary: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+}

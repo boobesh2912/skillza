@@ -1,0 +1,130 @@
+.onboarding-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.onboarding-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.step.active {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.onboarding-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.onboarding-card p {
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card {
+  padding: 2rem;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--bg-secondary);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.skill-checkbox {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--border);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--bg-secondary);
+  font-weight: 500;
+}
+
+.skill-checkbox:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+.skill-checkbox.selected {
+  background: var(--gradient-primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Action Buttons */
+.onboarding-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.back-button, .finish-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.finish-button {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.finish-button:hover {
+  transform: translateY(-2px);
+}
